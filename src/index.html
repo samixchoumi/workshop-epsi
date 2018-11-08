@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Reservation</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Id</th>
+                  <th scope="col">Probleme survenu</th>
+                  <th scope="col">Numero trajet</th>
+                </tr>
+              </thead>
+              <tbody id="clientsResults">
+              </tbody>
+            </table>
+            <hr/>
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <form onSubmit="App.castProblem(); return false;">
+              <div class="form-group">
+                <label for="clientsSelect">Add client</label>
+                <input type="text" class="form-control" id="clientsSelect"/>
+                <label for="problemsSelect">Select incident</label>
+                <select class="form-control" id="problemsSelect"></select>
+                <label for="numTrajetSelect">Add travel number</label>
+                <input type="text" class="form-control" id="numTrajetSelect"/>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-5">
+                  <button type="submit" class="btn btn-primary">Ajout incident</button>
+                </div>
+              </div>
+              <hr/>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
