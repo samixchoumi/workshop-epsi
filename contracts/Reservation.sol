@@ -27,9 +27,9 @@ contract Reservation {
 
     // Constructor
     constructor() public {
-        addClient("Clemster", "Retard", "0BER4KIO");
-        addClient("Samix", "Annulation", "TUVWX492");
-        addClient("Cédric", "Autre", "IK67A1RJ");
+        addClient("0x436c656d73746572", "Retard", "0BER4KIO");
+        addClient("0x53616d6978", "Annulation", "TUVWX492");
+        addClient("0x43c3a964726963", "Autre", "IK67A1RJ");
     }
 
     event ajoutProblemEvent (
