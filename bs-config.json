@@ -1,5 +1,7 @@
 {
   "server": {
     "baseDir": ["./src", "./build/contracts"]
-  }
+  },
+  "files": ["./src/**/*.{html,htm,css}"],
+  "open": false
 }
